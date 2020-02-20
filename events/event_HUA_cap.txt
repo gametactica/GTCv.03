@@ -1,0 +1,39 @@
+namespace = event_HUA_cap
+
+country_event =
+{
+    id = event_HUA_cap.1
+    title = event_HUA_cap.1.t
+    desc = event_HUA_cap.1.d
+    picture = ANGLICAN_SERMON_eventPicture
+
+    fire_only_once = yes
+    mean_time_to_happen = {months = 3}
+
+    trigger =
+    {
+        ai = no
+        tag = HUA
+    }
+
+    option =
+    {
+        name = event_HUA_cap.1.a
+        
+        if 
+        {    
+            limit = 
+            {
+                tag = HUA
+            }
+            capital_scope = 
+            {
+                area =
+                {
+                    clr_province_flag = gt_capital_province_@ROOT
+                    set_province_flag = gt_capital_province_@ROOT
+                }
+            }
+        }
+    }
+}
