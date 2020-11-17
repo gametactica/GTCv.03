@@ -25,8 +25,12 @@ country_event =
             every_country =
             {
                 limit = 
-                { 
-                    NOT = {tag = ROOT}
+                {
+                    OR = 
+                    {
+                        is_subject = no
+                        is_subject_of_type = tributary_state
+                    }
                 }
 
                 reverse_add_opinion = 

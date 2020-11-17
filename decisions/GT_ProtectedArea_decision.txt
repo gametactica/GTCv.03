@@ -40,13 +40,14 @@ country_decisions =
                 }
             }
             
-            hidden_effect = 
-            {
-                every_province = 
-                {
-                    clr_province_flag = can_reclaim_@ROOT
-                }
-            }
+           # hidden_effect = 
+           # {
+            #    every_province = 
+             #   {
+              #      clr_province_flag = can_reclaim_@ROOT
+               # }
+
+            #}
         }
     }
 }
